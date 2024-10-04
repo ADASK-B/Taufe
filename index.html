@@ -70,26 +70,72 @@ https://templatemo.com/tm-580-woox-travel
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <!-- ***** Main Banner Area Start ***** -->
-  <div class="about-main-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="content">
-            <div class="blur-bg"></div>
-            <h4>EXPLORE OUR COUNTRY</h4>
-            <div class="line-dec"></div>
-            <h2>Welcome To Caribbean</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttersi labore et dolore magna aliqua is ipsum suspendisse ultrices gravida</p>
-            <div class="main-button">
-              <a href="reservation.html">Discover More</a>
-            </div>
+   
+<!-- *************************************************************************** -->
+
+<!-- ***** Main Banner Area Start ***** -->
+ <div class="about-main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="content">
+          <div class="blur-bg"></div>
+          <h4>EVENT COUNTDOWN</h4>
+          <div class="line-dec"></div>
+          <h2>Countdown bis zum großen Event</h2>
+          <p>Wir freuen uns, Sie bei unserem besonderen Event begrüßen zu dürfen. Der Countdown läuft, und wir können es kaum erwarten!</p>
+
+          <!-- Countdown Timer -->
+          <h3 id="countdown" style="font-size: 36px; font-weight: bold; color: white;"></h3>
+
+          <div class="main-button">
+            <a href="reservation.html">Mehr erfahren</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- ***** Main Banner Area End ***** -->
+</div>
+<!-- ***** Main Banner Area End ***** -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+    // Function to update the countdown
+    function updateCountdown() {
+      // Get the current date and time
+      var now = new Date().getTime();
+
+      // Calculate the time difference between now and the countdown date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown in the element with id="countdown"
+      var countdownElement = document.getElementById("countdown");
+      if (countdownElement) {
+        if (distance > 0) {
+          countdownElement.innerHTML = days + " Tage " + hours + " Std " + minutes + " Min " + seconds + " Sek ";
+        } else {
+          countdownElement.innerHTML = "Das Event hat begonnen!";
+        }
+      }
+    }
+
+    // Update the countdown immediately
+    updateCountdown();
+
+    // Update the countdown every 1 second
+    var x = setInterval(updateCountdown, 1000);
+  });
+</script>
+<!-- *************************************************************************** -->
   
   <div class="cities-town">
     <div class="container">
