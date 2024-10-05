@@ -246,7 +246,7 @@ https://templatemo.com/tm-580-woox-travel
         <input type="text" name="entry.1130757674" placeholder="Dein Name" required>
         
         <!-- Dropdown-Feld für Anzahl Personen -->
-        <label for="entry.1306636082">Anzahl personen</label>
+        <label for="entry.1306636082"><br>Anzahl personen<br></label>
         <select name="entry.1306636082" id="entry.1306636082" required>
           <option value="" disabled selected>Bitte wählen...</option>
           <option value="1">1</option>
@@ -307,26 +307,27 @@ https://templatemo.com/tm-580-woox-travel
 
 /* Angepasster Stil für das Dropdown */
 .info_form select {
-  background-color: white; /* Hintergrundfarbe für das Dropdown */
-  color: #333; /* Textfarbe */
-  border: 1px solid #ccc; /* Rand wie die anderen Felder */
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; /* Entfernt den Standard-Browser-Stil */
+  appearance: none;
 }
 
 .info_form select:focus {
   outline: none;
-  border-color: #22b3c1; /* Gleiche Farbe wie der Button bei Fokus */
+  border-color: #22b3c1;
 }
 
 .info_form label {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 600;
   color: black;
+  font-size: 16px;
 }
 
 .info_form button {
@@ -346,11 +347,40 @@ https://templatemo.com/tm-580-woox-travel
   background-color: #1a8b9e;
 }
 
-/* Media Query für mobile Geräte */
+/* Media Query für kleinere Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .info_form {
     padding: 15px;
-    max-width: 100%;
+    max-width: 70%; /* Passt die Box an die Bildschirmgröße an */
+  }
+  
+  .info_form input, .info_form select, .info_form button {
+     /* Kleinere Schriftgrößen */
+    padding: 8px; /* Weniger Padding */
+  }
+
+  .info_form button {
+    padding: 12px 20px; /* Kleinere Buttons */
+  }
+}
+
+/* Media Query für Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  .info_form {
+    padding: 10px;
+    max-width: 100%; /* Volle Breite auf Smartphones */
+  }
+  
+  .info_form h2.styled-heading {
+    font-size: 24px; /* Kleinere Überschrift auf Smartphones */
+  }
+
+  .info_form input, .info_form select, .info_form button {
+    padding: 6px;
+  }
+
+  .info_form button {
+    padding: 10px 15px;
   }
 }
 </style>
@@ -426,6 +456,8 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
+
+<!-- *************************************************************************** -->
   <div class="reservation-form">
     <div class="container">
       <div class="row">
@@ -482,18 +514,14 @@ https://templatemo.com/tm-580-woox-travel
                       </select>
                   </fieldset>
               </div>
-              <div class="col-lg-12">                        
-                  <fieldset>
-                      <button class="main-button">Make Your Reservation Now</button>
-                  </fieldset>
-              </div>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
+  
+<!-- *************************************************************************** -->
   <div class="call-to-action">
     <div class="container">
       <div class="row">
