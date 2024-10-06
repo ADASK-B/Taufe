@@ -471,7 +471,7 @@ https://templatemo.com/tm-580-woox-travel
         <form id="reservation-form" name="gs" method="submit" role="search" action="#">
           <div class="row">
             <div class="col-lg-12">
-              <h4>Imformation zur <em>Taufe</em></h4>
+              <h4>Information zur <em>Taufe</em></h4>
             </div>
             <div class="col-lg-12">
               <!-- Neuer Bereich für die zwei Spalten -->
@@ -479,19 +479,23 @@ https://templatemo.com/tm-580-woox-travel
                 <!-- Linke Spalte -->
                 <div class="address-box">
                   <label for="Name" class="form-label">Adresse:</label>
-                  <p>Heilig Geist</p>
-                  <p>Friedhofstraße 9</p>
-                  <p>73614</p>
-                  <p>Schorndorf</p>
+                  <a href="https://www.google.com/maps/place/Heilig+Geist,+Friedhofstraße+9,+73614+Schorndorf,+Germany/" target="_blank">
+                    <p>Heilig Geist</p>
+                    <p>Friedhofstraße 9</p>
+                    <p>73614</p>
+                    <p>Schorndorf</p>
+                  </a>
                 </div>
 
                 <!-- Rechte Spalte -->
                 <div class="address-box">
                   <label for="Name" class="form-label">Adresse:</label>
-                  <p>Heilig Geist</p>
-                  <p>Friedhofstraße 9</p>
-                  <p>73614</p>
-                  <p>Schorndorf</p>
+                  <a href="https://www.google.com/maps/place/Heilig+Geist,+Friedhofstraße+9,+73614+Schorndorf,+Germany/" target="_blank">
+                    <p>Heilig Geist</p>
+                    <p>Friedhofstraße 9</p>
+                    <p>73614</p>
+                    <p>Schorndorf</p>
+                  </a>
                 </div>
               </div>
               <!-- Ende des neuen Bereichs -->
@@ -526,6 +530,15 @@ https://templatemo.com/tm-580-woox-travel
     margin: 0;
     padding: 0;
     line-height: 1.2;
+  }
+
+  .address-box a {
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+    color: inherit; /* Beibehaltung der Textfarbe */
+  }
+
+  .address-box a:hover {
+    text-decoration: underline; /* Unterstreicht den Link bei Hover */
   }
 
   /* Media Query für Mobilgeräte (Bildschirme kleiner als 768px) */
