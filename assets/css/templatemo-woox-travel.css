@@ -1260,26 +1260,12 @@ About Page Style
   display: none;
 }
 
-.cities-town .owl-nav .owl-next::after {
-  font-family: "FontAwesome";
-  content: '\f061'; 
-  color: #cdcdcd;
-  font-size: 20px;
-  transition: all .3s;
-}
 
 .cities-town .owl-nav .owl-prev span {
   display: none;
 }
 
-.cities-town .owl-nav .owl-prev::after {
-  font-family: "FontAwesome";
-  content: '\f060'; 
-  color: #cdcdcd;
-  margin-right: 15px;
-  font-size: 20px;
-  transition: all .3s;
-}
+
 
 .cities-town .owl-nav .owl-prev:hover::after,
 .cities-town .owl-nav .owl-next:hover::after {
