@@ -448,7 +448,7 @@ Header Style++++++++++++++++++++++++
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 33px;
+  top: 23px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -592,7 +592,7 @@ Header Style++++++++++++++++++++++++
   .header-area .main-nav .logo {
     position: absolute;
     left: 30px;
-    top: 15px;
+    top: 2px;
   }
   .background-header .main-nav .logo {
     top: 0px;
@@ -602,7 +602,7 @@ Header Style++++++++++++++++++++++++
   }
   .header-area .main-nav .border-button {
     position: absolute;
-    top: 15px;
+    top: 2px;
     right: 70px;
   }
   .header-area.header-sticky .nav li a:hover,
@@ -615,8 +615,8 @@ Header Style++++++++++++++++++++++++
   }
   .header-area {
     background-color: #64b587;
-    padding: 0px 15px;
-    height: 100px;
+    padding: 0px 5px;
+    height: 70px;
     box-shadow: none;
     text-align: center;
   }
@@ -2123,8 +2123,8 @@ Reservation Page Style
 .reservation-form #reservation-form {
   padding: 60px 120px;
   background-color: #f9f9f9;
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
 }
 
 .reservation-form #reservation-form label {
