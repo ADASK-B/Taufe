@@ -63,8 +63,8 @@ https://templatemo.com/tm-580-woox-travel
                       <div class="blur-bg"></div>
                       <h4 style="padding-top: 100px;">EVENT COUNTDOWN</h4>
                       <div class="line-dec"></div>
-                      <h1><b>Wann ist die Taufe? </b></h1>
-                      <b style="font-size: 20px;">Noch</b>
+                      <h1><b>Adrians Taufe ist in</b></h1>
+                      <b style="font-size: 20px;"></b>
                       <p class="countdown" style="font-size: 36px; font-weight: bold; color: white; padding-bottom: 20px;"></p>
                       <p>Ein kleiner Mensch, ein großes Wunder – und nun auch ein großer Tag!
                         Adrian wird getauft, und dieses besondere Ereignis möchten wir mit euch feiern.
@@ -92,8 +92,8 @@ https://templatemo.com/tm-580-woox-travel
                       <div class="blur-bg"></div>
                       <h4 style="padding-top: 100px;">EVENT COUNTDOWN</h4>
                       <div class="line-dec"></div>
-                      <h1><b>Wann ist die Taufe? </b></h1>
-                      <b style="font-size: 20px;">Noch</b>
+                      <h1><b>Adrians Taufe ist in </b></h1>
+                      <b style="font-size: 20px;"></b>
                       <p class="countdown" style="font-size: 36px; font-weight: bold; color: white; padding-bottom: 20px;"></p>
                       <p>Ein kleiner Mensch, ein großes Wunder – und nun auch ein großer Tag!
                         Adrian wird getauft, und dieses besondere Ereignis möchten wir mit euch feiern.
@@ -121,8 +121,8 @@ https://templatemo.com/tm-580-woox-travel
                       <div class="blur-bg"></div>
                       <h4 style="padding-top: 100px;">EVENT COUNTDOWN</h4>
                       <div class="line-dec"></div>
-                      <h1><b>Wann ist die Taufe? </b></h1>
-                      <b style="font-size: 20px;">Noch</b>
+                      <h1><b>Adrians Taufe ist in </b></h1>
+                      <b style="font-size: 20px;"></b>
                       <p class="countdown" style="font-size: 36px; font-weight: bold; color: white; padding-bottom: 20px;"></p>
                       <p>Ein kleiner Mensch, ein großes Wunder – und nun auch ein großer Tag!
                         Adrian wird getauft, und dieses besondere Ereignis möchten wir mit euch feiern.
@@ -150,8 +150,8 @@ https://templatemo.com/tm-580-woox-travel
                       <div class="blur-bg"></div>
                       <h4 style="padding-top: 100px;">EVENT COUNTDOWN</h4>
                       <div class="line-dec"></div>
-                      <h1><b>Wann ist die Taufe? </b></h1>
-                      <b style="font-size: 20px;">Noch</b>
+                      <h1><b> Adrians Taufe ist in </b></h1>
+                      <b style="font-size: 20px;"></b>
                       <p class="countdown" style="font-size: 36px; font-weight: bold; color: white; padding-bottom: 20px;"></p>
                       <p>Ein kleiner Mensch, ein großes Wunder – und nun auch ein großer Tag!
                         Adrian wird getauft, und dieses besondere Ereignis möchten wir mit euch feiern.
@@ -202,7 +202,9 @@ https://templatemo.com/tm-580-woox-travel
       var countdownElements = document.querySelectorAll('.countdown');
       countdownElements.forEach(function(countdownElement) {
         if (distance > 0) {
-          countdownElement.innerHTML = days + " Tage " + hours + " Std " + minutes + " Min " + seconds + " Sek ";
+          // Check if there is exactly 1 day left
+          var dayText = days === 1 ? "Tag" : "Tagen";
+          countdownElement.innerHTML = days + " " + dayText + " " + hours + " Std " + minutes + " Min " + seconds + " Sek ";
         } else {
           countdownElement.innerHTML = "Das Event hat begonnen!";
         }
@@ -222,34 +224,34 @@ https://templatemo.com/tm-580-woox-travel
 
 
 <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="Logo" width="100" height="auto">
-                    </a>
-                    <!-- Bildnachweis: Darius Dan -->
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html">Start</a></li>
-                        
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      <img src="assets/images/logo.png" alt="Logo" width="100" height="auto">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li><a class="scroll-to-section" href="#anmeldung">Anmeldung</a></li>
+                    <li><a class="scroll-to-section" href="#kirche">Kirche</a></li>
+                    <li><a class="scroll-to-section" href="#halle">Halle</a></li>
+                  </ul>   
+                  <a class="menu-trigger">
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
 </header>
 
 <!-- *************************************************************************** -->
 
-<div class="reservation-form">
+<div id="anmeldung" class="reservation-form">
   <div class="content">
     <div class="info_form">
       <h2 class="styled-heading">
@@ -261,7 +263,7 @@ https://templatemo.com/tm-580-woox-travel
         <input type="text" name="entry.1130757674" placeholder="Dein Name" required>
         
         <!-- Dropdown-Feld für Anzahl Personen -->
-        <label for="entry.1306636082"><br>Anzahl personen<br></label>
+        <label for="entry.1306636082"><br>Anzahl Personen<br></label>
         <select name="entry.1306636082" id="entry.1306636082" required>
           <option value="" disabled selected>Bitte wählen...</option>
           <option value="1">1</option>
@@ -413,55 +415,55 @@ https://templatemo.com/tm-580-woox-travel
         <div class="slider-content">
           <div class="row">
             <div class="col-lg-12">
-              <h2>Das <em>Taufkind</em></h2>
+              <h2>Unser<em> Adi</em></h2>
             </div>
             <div class="col-lg-12">
               <div class="owl-cites-town owl-carousel">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-01.jpg" alt="">
+                    <img src="assets/images/cities-01.jpeg" alt="">
                     <h4>Havana</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-02.jpg" alt="">
+                    <img src="assets/images/cities-02.jpeg" alt="">
                     <h4>Kingston</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-03.jpg" alt="">
+                    <img src="assets/images/cities-03.jpeg" alt="">
                     <h4>George Town</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-04.jpg" alt="">
+                    <img src="assets/images/cities-04.jpeg" alt="">
                     <h4>Santo Domingo</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-01.jpg" alt="">
+                    <img src="assets/images/cities-05.jpeg" alt="">
                     <h4>Havana</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-02.jpg" alt="">
+                    <img src="assets/images/cities-06.jpeg" alt="">
                     <h4>Kingston</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-03.jpg" alt="">
+                    <img src="assets/images/cities-07.jpeg" alt="">
                     <h4>George Town</h4>
                   </div>
                 </div>
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/cities-04.jpg" alt="">
+                    <img src="assets/images/cities-08.jpg" alt="">
                     <h4>Santo Domingo</h4>
                   </div>
                 </div>
@@ -474,7 +476,7 @@ https://templatemo.com/tm-580-woox-travel
   </div>
 
 
-  <div class="reservation-form">
+  <div id="kirche" class="reservation-form">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -616,7 +618,7 @@ https://templatemo.com/tm-580-woox-travel
   </style>
   
   
-  <<div class="reservation-form">
+  <div id="halle" class="reservation-form">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">

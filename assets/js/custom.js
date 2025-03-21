@@ -162,6 +162,15 @@
 		}
 	});
 
+	$('.header-area .nav li a').on('click', function() {
+		var width = $(window).width();
+		if(width < 991) {
+			$('.menu-trigger').removeClass('active');
+			$('.header-area .nav').slideUp(200);
+		}
+	});
+	
+
 	$(document).ready(function () {
 	    $(document).on("scroll", onScroll);
 	    
